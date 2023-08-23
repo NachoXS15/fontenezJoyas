@@ -22,5 +22,8 @@
             <h2>Somos Fonteñez</h2>
         </div>
     </section>
+    <section id="sect2">
+        <h2>"Un arte que se hace eterno"</h2>
+    </section>
 </body>
 </html>
