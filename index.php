@@ -25,7 +25,11 @@
         </div>
     </section>
     <section id="sect2">
-        <h2>"Un arte que se hace eterno"</h2>
+        <h2 class="high-text">"Un arte que se hace eterno"</h2>
+    </section>
+    <section id="sect3"></section>
+    <section id="highlighted">
+        <h2 class="high-text">PRODUCTOS</h2>
     </section>
 </body>
 </html>
