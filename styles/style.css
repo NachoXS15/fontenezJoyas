@@ -14,14 +14,13 @@
 
 header{
     width: 100%;
-    height: 70px;
+    height: 80px;
     background-color: var(--blue);
     display: flex;
     justify-content: center;
     gap: 200px;
     align-items: center;
 }
-
 
 header a{
 	text-decoration: none;
@@ -41,6 +40,7 @@ header a{
 	width: 65%;
 	height: 90%;
     background-image: url(../assets/img/img1.jpg);
+    background-size: cover;
 }
 
 #sect1-2{
@@ -70,19 +70,101 @@ header a{
     color: var(--white);
     border: 1px solid var(--white);
     border-radius: 20px;
-    padding: 10px;
+    padding: 10px 20px;
 }
 
 #sect2{
     width: 100%;
-    height: 300px;
+    height: 340px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-#sect2 h2{
-   font-family: serif;
-   font-size: 60px;
-   letter-spacing: 10px;
-   color: var(--lightBlue);
+
+
+.high-text{
+    font-family: serif;
+    font-size: 60px;
+    letter-spacing: 10px;
+    color: var(--lightBlue);
+}
+
+#sect3{
+    width: 100%;
+    height: 400px;
+    background-image: url(../assets/img/img2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#sect4{
+    width: 100%;
+    height: 600px;
+    background-color: white;
+}
+
+#sect4 h2{
+    text-align: center;
+    margin: 80px;
+}
+
+.item-row{
+    width: 100%;
+    height: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10em;
+}
+
+.item{
+    width: 15%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#sect5{
+    width: 100%;
+    height: 450px;
+    background-image: url(../assets/img/img4.jpg);
+    background-repeat: no-repeat;
+    margin-top: 50px;
+    background-size: cover;
+}
+
+#sect6{
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.item-row div{
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    color: var(--lightBlue);
+}
+
+footer{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+footer a{
+    text-decoration: none;
+    color: var(--white);
 }
