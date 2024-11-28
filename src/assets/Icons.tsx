@@ -1,6 +1,6 @@
 type props = {
-    color: string,
-    size: number
+    color?: string,
+    size?: number
 }
 
 export function MenuIcon() {
