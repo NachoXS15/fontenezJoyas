@@ -1,26 +1,48 @@
 import { Instagram, Mail, Phone } from "../assets/Icons";
 import logo from '../assets/iso_blanco.png'
 export default function Footer() {
-  return (
-    <footer className="w-full h-72 text-white bg-purplemain flex items-center justify-around">
-        <div className="flex flex-col gap-5">
-            <h2 className="font-bold text-4xl">Contactos</h2>
-            <nav className="text-xl flex flex-col gap-2 ">
-                <div className="flex gap-2">
-                    <Instagram />
-                    <span>@fontenezjoyas_</span>
+    return (
+        <>
+            <footer className='w-full h-fit bg-purplemain flex flex-col justify-center md:items-start px-20 md:px-30 md:pt-10'>
+                <div className='w-full md:flex flex-row justify-center gap-x-6 items-center'>
+                    <div className="w-full mt-10 md:hidden flex justify-center md:justify-center">
+                        <img src={logo} alt="Logo" className="w-20 md:w-24" />
+                    </div>
+                    <hr className='w-4/5 border m-auto my-5 bg-white text-white text-center md:hidden' />
+                    <div className='w-full md:flex flex-col text-white md:border-r-2 md:border-white'>
+                        <h2 className='text-3xl mb-3'>Contacto</h2>
+                        <nav className='flex flex-col gap-2 md:gap-4'>
+                            <div className="flex gap-2">
+                                <Instagram />
+                                <span>@fontenezjoyas_</span>
+                            </div>
+                            <div className="flex gap-2">
+                                <Mail color="yellow" size={32} />
+                                <span>fontenzjoyas@gmail.com</span>
+                            </div>
+                            <div className="flex gap-2">
+                                <Phone />
+                                <span>+54 9 3804-360110</span>
+                            </div>
+                        </nav>
+                    </div>
+                    <div className="w-full h-fit mt-10 md:m-0 hidden md:flex justify-center md:justify-center md:border-r-2 md:border-white">
+                        <img src={logo} alt="Logo" className="w-20 md:w-36" />
+                    </div>
+                    <hr className='w-4/5 border m-auto my-5 bg-white text-white text-center md:hidden' />
+                    <div className='w-full flex flex-col  text-white'>
+                        <h2 className='text-3xl'>Ubicación</h2>
+                        <p>Encuentranos aquí</p>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13902.210108594923!2d-66.8570293!3d-29.4126436!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9427dbb53a260ab3%3A0xb743138d64cb7601!2sTRAVEL%20GIT!5e0!3m2!1ses-419!2sar!4v1722864554641!5m2!1ses-419!2sar" style={{ border: 0 }} className="" allowFullScreen loading="lazy"></iframe>
+                    </div>
                 </div>
-                <div className="flex gap-2">
-                    <Mail />
-                    <span>fontenzjoyas@gmail.com</span>
+                <div className='w-full text-center bg-bluesec mt-10'>
+                    <hr className='w-4/5 m-auto border bg-white text-white text-center' />
+                    <div className='w-4/5 m-auto'>
+                        <p className='text-white text-center text-md py-4 font-medium'>Copyright © 2024 <strong>Fonteñez Joyas</strong> | Todos los derechos reservados</p>
+                    </div>
                 </div>
-                <div className="flex gap-2">
-                    <Phone />
-                    <span>+54 9 3804-360110</span>
-                </div>
-            </nav>
-        </div>
-        <img src={logo} width={100} alt="" />
-    </footer>
-  )
+            </footer>
+        </>
+    )
 }

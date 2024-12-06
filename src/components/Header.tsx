@@ -15,8 +15,8 @@ export default function Header() {
                     <img src={logo} width={40} alt="" />
                 </NavLink>
                 <nav className='hidden md:flex justify-center items-center gap-10'>
-                    <NavLink className="mx-5 text-lg text-bluemain md:hover:scale-150 transition" style={{ fontFamily: 'Mundial' }} to="/paquetes">Paquetes</NavLink>
-                    <NavLink className="mx-5 text-lg text-bluemain md:hover:scale-150 transition" style={{ fontFamily: 'Mundial' }} to="/about">Nosotros</NavLink>
+                    <NavLink className="mx-5 text-lg text-bluemain md:hover:scale-110 transition" style={{ fontFamily: 'Mundial' }} to="/paquetes">Paquetes</NavLink>
+                    <NavLink className="mx-5 text-lg text-bluemain md:hover:scale-110 transition" style={{ fontFamily: 'Mundial' }} to="/about">Nosotros</NavLink>
                     <form action="">
                         <input type="text" className="h-7 rounded-full" />
                     </form>
