@@ -10,9 +10,9 @@ export default function Header() {
     }
     return (
         <>
-            <div className='bg-purplemain text-white flex justify-between items-center py-4 md:py-4 px-7 md:justify-around select-none drop-shadow-sm'>
+            <header className='bg-purplemain text-white flex justify-between items-center py-9 px-20 md:py-4 md:px-7 md:justify-around select-none drop-shadow-sm'>
                 <NavLink to="/">
-                    <img src={logo} width={40} alt="" />
+                    <img src={logo} className="w-14 md:w-10" alt="" />
                 </NavLink>
                 <nav className='hidden md:flex justify-center items-center gap-10'>
                     <NavLink className="mx-5 text-lg text-bluemain md:hover:scale-105 transition" style={{ fontFamily: 'Mundial' }} to="/productos">Productos</NavLink>
@@ -24,13 +24,13 @@ export default function Header() {
                 <div className='md:hidden flex items-center justify-center' onClick={toggleNavBar}>
                     {isClick ? <CloseIcon /> : <MenuIcon />}
                 </div>
-            </div>
+            </header>
             {isClick && (
-                <div className=' md:hidden h-fit py-9 bottom-0 shadow-2xl'>
-                    <hr className='w-3/5 m-auto border-2 border-bluemain' />
+                <div className='md:hidden bg-slate-200 h-fit py-9 bottom-0'>
+                    <hr className='w-3/5 m-auto border border-purplemain' />
                     <div className='flex flex-col mt-3'>
-                        <NavLink className="hover:scale-105 transition my-2 mx-9 text-lg text-bluemain" style={{ fontFamily: 'Mundial' }} to="/paquetes">Productos</NavLink>
-                        <NavLink className="hover:scale-105 transition my-2 mx-9 text-lg text-bluemain" style={{ fontFamily: 'Mundial' }} to="/testimonies">Nosotros</NavLink>
+                        <NavLink className="hover:scale-105 transition my-2 mx-9 text-2xl text-purplemain" style={{ fontFamily: 'Mundial' }} to="/paquetes">Productos</NavLink>
+                        <NavLink className="hover:scale-105 transition my-2 mx-9 text-2xl text-purplemain" style={{ fontFamily: 'Mundial' }} to="/testimonies">Nosotros</NavLink>
                     </div>
                 </div>
             )}
