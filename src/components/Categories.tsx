@@ -13,7 +13,7 @@ export default function Categories() {
                     </div>
                 </div>
                 <div className="flex gap-2 flex-col mt-10">
-                    <h2 className="text-4xl text-blue-800 font-bold uppercase">Artesanias</h2>
+                    <h2 className="text-3xl text-blue-800 font-bold uppercase">Artesanias</h2>
                     <div className="flex flex-col">
                         <a className="text-2xl text-gray-400 hover:underline hover:text-gray-800">Cubiertos</a>
                         <a className="text-2xl text-gray-400 hover:underline hover:text-gray-800">Mates</a>

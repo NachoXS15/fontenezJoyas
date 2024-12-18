@@ -1,7 +1,6 @@
 import Layout from "../components/Layout";
 import logo from '../assets/logo.png'
 import bannerImg from '../assets/banner_img.jpg'
-import banner1 from '../assets/banner1.jpg'
 export default function Index() {
   return (
     <Layout>
@@ -13,9 +12,6 @@ export default function Index() {
       </div>
       <div className="w-full h-96 bg-white px-5">
         <h2 className="h-96 text-darkblue text-5xl flex justify-center items-center tracking-widest text-center">100 años celebrando la belleza en cada joya.</h2>
-      </div>
-      <div className="w-full h-[900px] my-32 px-30">
-        <div className="w-full h-[900px] bg-cover bg-center bg-local" style={{backgroundImage: `url(${banner1})`}}></div>
       </div>
     </Layout>
   )
