@@ -1,9 +1,9 @@
-import { Instagram, Mail, Phone } from "../assets/Icons";
+import { Instagram, Mail, Phone } from "./ui/Icons";
 import logo from '../assets/iso_blanco.png'
 export default function Footer() {
     return (
         <>
-            <footer className='w-full h-fit bg-purplemain flex flex-col justify-center md:items-start px-20 md:px-30 md:pt-10'>
+            <footer className='w-full h-fit bg-purplemain flex flex-col justify-center md:items-start px-10 md:px-36 md:pt-10'>
                 <div className='w-full md:flex flex-row justify-center gap-x-6 items-center'>
                     <div className="w-full mt-10 md:hidden flex justify-center md:justify-center">
                         <img src={logo} alt="Logo" className="w-20 md:w-24" />

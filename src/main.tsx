@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Index from './pages/Index.tsx'
+import Products from './pages/Products.tsx'
 
   const router = createBrowserRouter([
     {
@@ -10,7 +11,8 @@ import Index from './pages/Index.tsx'
       element: <Index />
     },
     {
-      path: "/products",
+      path: "/productos",
+      element: <Products />
     }
   ])
 

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
-import { CloseIcon, MenuIcon } from "../assets/Icons";
+import { CloseIcon, MenuIcon } from "./ui/Icons";
 import logo from '../assets/iso_blanco.png'
 
 export default function Header() {
@@ -15,10 +15,10 @@ export default function Header() {
                     <img src={logo} width={40} alt="" />
                 </NavLink>
                 <nav className='hidden md:flex justify-center items-center gap-10'>
-                    <NavLink className="mx-5 text-lg text-bluemain md:hover:scale-110 transition" style={{ fontFamily: 'Mundial' }} to="/paquetes">Paquetes</NavLink>
-                    <NavLink className="mx-5 text-lg text-bluemain md:hover:scale-110 transition" style={{ fontFamily: 'Mundial' }} to="/about">Nosotros</NavLink>
+                    <NavLink className="mx-5 text-lg text-bluemain md:hover:scale-105 transition" style={{ fontFamily: 'Mundial' }} to="/productos">Productos</NavLink>
+                    <NavLink className="mx-5 text-lg text-bluemain md:hover:scale-105 transition" style={{ fontFamily: 'Mundial' }} to="/about">Nosotros</NavLink>
                     <form action="">
-                        <input type="text" className="h-7 rounded-full" />
+                        <input type="text" className="h-7 rounded-full px-5" placeholder="Buscar..." />
                     </form>
                 </nav>
                 <div className='md:hidden flex items-center justify-center' onClick={toggleNavBar}>
