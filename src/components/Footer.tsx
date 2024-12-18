@@ -8,10 +8,10 @@ export default function Footer() {
                     <div className="w-full mt-10 md:hidden flex justify-center md:justify-center">
                         <img src={logo} alt="Logo" className="w-20 md:w-24" />
                     </div>
-                    <hr className='w-4/5 border m-auto my-5 bg-white text-white text-center md:hidden' />
+                    <hr className='w-4/5 border m-auto my-8 md:5 bg-white text-white text-center md:hidden' />
                     <div className='w-full md:flex flex-col text-white md:border-r-2 md:border-white'>
-                        <h2 className='text-3xl mb-3'>Contacto</h2>
-                        <nav className='flex flex-col gap-2 md:gap-4'>
+                        <h2 className='text-3xl mb-5'>Contacto</h2>
+                        <nav className='flex flex-col gap-3 md:gap-4'>
                             <div className="flex gap-2">
                                 <Instagram />
                                 <span>@fontenezjoyas_</span>
@@ -29,10 +29,10 @@ export default function Footer() {
                     <div className="w-full h-fit mt-10 md:m-0 hidden md:flex justify-center md:justify-center md:border-r-2 md:border-white">
                         <img src={logo} alt="Logo" className="w-20 md:w-36" />
                     </div>
-                    <hr className='w-4/5 border m-auto my-5 bg-white text-white text-center md:hidden' />
+                    <hr className='w-4/5 border m-auto my-8 md:my-5 bg-white text-white text-center md:hidden' />
                     <div className='w-full flex flex-col  text-white'>
                         <h2 className='text-3xl'>Ubicación</h2>
-                        <p>Encuentranos aquí</p>
+                        <p className="mb-2">Encuentranos aquí</p>
                         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13902.210108594923!2d-66.8570293!3d-29.4126436!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9427dbb53a260ab3%3A0xb743138d64cb7601!2sTRAVEL%20GIT!5e0!3m2!1ses-419!2sar!4v1722864554641!5m2!1ses-419!2sar" style={{ border: 0 }} className="" allowFullScreen loading="lazy"></iframe>
                     </div>
                 </div>

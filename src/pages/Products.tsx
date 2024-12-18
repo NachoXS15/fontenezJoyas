@@ -5,10 +5,10 @@ import Layout from "../components/Layout";
 export default function Products() {
   return (
     <Layout>
-        <main className="max-w-full flex font-serif">
+        <main className="max-w-full flex justify-center md:justify-start font-serif">
             <Categories />
-            <section className="w-9/12 flex items-start justify-center bg-slate-50 px-10 py-12">
-                <div className="flex flex-wrap items-start justify-center gap-7">
+            <section className="w-full md:w-9/12 flex items-start justify-center bg-slate-50 px-10 py-12">
+                <div className="w-full flex flex-wrap items-start justify-center gap-7">
                     <Card />
                     <Card />
                     <Card />
