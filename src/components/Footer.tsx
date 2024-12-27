@@ -33,7 +33,7 @@ export default function Footer() {
                     <div className='w-full flex flex-col  text-white'>
                         <h2 className='text-3xl'>Ubicación</h2>
                         <p className="mb-2">Encuentranos aquí</p>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13902.210108594923!2d-66.8570293!3d-29.4126436!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9427dbb53a260ab3%3A0xb743138d64cb7601!2sTRAVEL%20GIT!5e0!3m2!1ses-419!2sar!4v1722864554641!5m2!1ses-419!2sar" style={{ border: 0 }} className="" allowFullScreen loading="lazy"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3475.6528287105516!2d-66.8575014238112!3d-29.409710475249334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9427da4b4631d64b%3A0x671f60bd25b7a507!2sFonte%20ez%20Joyas%20-%20Plateros%20-%20Orfebres%20Joyeria%20Y%20Relojeria!5e0!3m2!1ses-419!2sar!4v1734571222183!5m2!1ses-419!2sar" style={{ border: 0 }} className="" allowFullScreen loading="lazy"></iframe>
                     </div>
                 </div>
                 <div className='w-full text-center bg-bluesec mt-10'>

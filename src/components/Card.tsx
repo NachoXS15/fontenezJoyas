@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router'
 import img from '../assets/anillo.jpg'
 
 export default function Card() {
@@ -8,7 +9,7 @@ export default function Card() {
                 <h2 className="text-3xl md:text-2xl font-bold text-blue-800">Anillo</h2>
                 <h4 className="text-md text-wrap text-gray-400">anillo todo fachero zarpado nazi</h4>
                 <h3 className="text-2xl text-gray-400">$100000</h3>
-                <a href="" className='bg-blue-800 w-fit mt-5 text-white rounded-full px-5 py-1 hover:bg-white hover:text'>Ver más</a>
+                <NavLink to="/producto" className='bg-blue-800 w-fit mt-5 text-white rounded-full px-5 py-1 hover:bg-white hover:text-blue-800'>Ver más</NavLink>
             </div>
         </div>
     )
