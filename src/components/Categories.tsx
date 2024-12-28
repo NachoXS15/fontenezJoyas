@@ -3,7 +3,7 @@ import { CategoriesArt, CategoriesJoyas } from "../config/Categories";
 export default function Categories() {
     return (
         <>
-            <aside className="hidden md:block w-fit lg:px-10 bg-slate-200 px-10 py-14">
+            <aside className="hidden xl:block xl:w-fit lg:px-10 bg-slate-200 px-10 py-14">
                 <div className="flex gap-2 flex-col">
                     <h2 className="text-3xl text-blue-800 font-bold uppercase">Joyas</h2>
                     <div className="flex flex-col">
