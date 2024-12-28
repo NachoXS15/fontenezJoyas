@@ -25,7 +25,7 @@ export default function Index() {
           <div className="bg-purplemain w-full h-full bg-cover bg-opacity-40 absolute"></div>
         </div>
       </section>
-      <div className="w-full h-96 bg-white px-5">
+      <div className="w-full h-96 bg-white px-5" style={{fontFamily: 'quador'}}>
         <h2 className="h-96 text-darkblue text-5xl flex justify-center items-center tracking-widest text-center">100 años celebrando la belleza en cada joya.</h2>
       </div>
     </Layout>
