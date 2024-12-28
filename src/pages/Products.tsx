@@ -6,11 +6,11 @@ import { Cancel, Check } from "../components/ui/Icons";
 export default function Products() {
   return (
     <Layout>
-        <main className="max-w-full flex justify-center font-serif">
+        <main className="max-w-full flex justify-center font-serif" style={{fontFamily: 'quador'}}>
             <Categories />
             <section className="w-full xl:w-9/12 flex items-start flex-col justify-center m-auto bg-slate-50 px-5 md:px-10 py-12">
                 <div className="w-full flex items-center justify-between mb-10">
-                  <h2 className="text-center pl-2 text-3xl font-bold text-purplemain">Nuestros Productos</h2>
+                  <h2 className="text-center pl-2 text-3xl font-bold text-blue-800">Nuestros Productos</h2>
                   <form className="flex items-center text-xl gap-2 text-purplemain">
                     <select name="" id="" className="w-28 border-2 border-purplemain rounded-full px-2 py-1 pr-2">
                       <option value="" className="">Filtros</option>
