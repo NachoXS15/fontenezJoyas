@@ -2,7 +2,11 @@ import Layout from "../components/Layout";
 import img from '../assets/anillo.jpg'
 import { NavLink } from "react-router-dom";
 import Card from "../components/Card";
+import { useEffect } from "react";
 export default function SingleProduct() {
+  useEffect(() => {
+		window.scrollTo({ top: 0, behavior: 'smooth' });
+	}, []);
   return (
     <Layout>
       <div className="w-full lg:w-5/6 my-10 lg:px-24 md:my-14 h-fit m-auto flex flex-col md:flex-row items-center justify-center gap-10" style={{fontFamily: 'quador'}}>
@@ -22,7 +26,7 @@ export default function SingleProduct() {
       <hr className="border-2 m-auto border-purplemain w-32" />
       <div className="w-full lg:w-4/6 m-auto my-5 px-5" style={{fontFamily: 'quador'}}>
         <h2 className="text-center text-blue-800 font-semibold text-3xl mb-2">Productos relacionados</h2>
-        <div className="w-full  grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-2 md:gap-1">
+        <div className="w-full grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-2 md:gap-1">
           <Card />
           <Card />
           <Card />

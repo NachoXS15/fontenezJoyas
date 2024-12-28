@@ -8,7 +8,7 @@ export default function Products() {
     <Layout>
         <main className="max-w-full flex justify-center font-serif" style={{fontFamily: 'quador'}}>
             <Categories />
-            <section className="w-full xl:w-9/12 flex items-start flex-col justify-center m-auto bg-slate-50 px-5 md:px-10 py-12">
+            <section className="w-full xl:w-9/12 flex items-start flex-col justify-center m-auto bg-slate-50 px-2 md:px-10 py-12">
                 <div className="w-full flex items-center justify-between mb-10">
                   <h2 className="text-center pl-2 text-3xl font-bold text-blue-800">Nuestros Productos</h2>
                   <form className="flex items-center text-xl gap-2 text-purplemain">
@@ -23,7 +23,7 @@ export default function Products() {
                   </form>
                 </div>
                 <hr className="border-2 border-purplemain w-20 m-auto" />
-                <div className="w-full mt-5 grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 md:gap-1">
+                <div className="w-full mt-5 grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  md:gap-1">
                     <Card />
                     <Card />
                     <Card />

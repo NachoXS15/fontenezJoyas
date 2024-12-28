@@ -17,7 +17,7 @@ export default function Footer() {
                                 <span>@fontenezjoyas_</span>
                             </div>
                             <div className="flex gap-2">
-                                <Mail color="yellow" size={32} />
+                                <Mail color="white" size={32} />
                                 <span>fontenzjoyas@gmail.com</span>
                             </div>
                             <div className="flex gap-2">
