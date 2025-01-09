@@ -1,11 +1,11 @@
 import Layout from "../components/Layout";
 import logo from '../assets/logo.png'
 import Anillo from '../assets/anillo.jpg'
-import bannerImg from '../assets/banner/banner1.jpg'
-import bannerImg2 from '../assets/banner/banner3.jpg'
-import bannerImg3 from '../assets/banner/banner2.jpg'
-import bannerImg4 from '../assets/banner/banner4.jpg'
-import bannerImg5 from '../assets/banner/banner5.jpg'
+import bannerImg from '../assets/banners/banner1.jpg'
+import bannerImg2 from '../assets/banners/banner3.jpg'
+import bannerImg3 from '../assets/banners/banner2.jpg'
+import bannerImg4 from '../assets/banners/banner4.jpg'
+import bannerImg5 from '../assets/banners/banner5.jpg'
 export default function Index() {
   return (
     <Layout>
