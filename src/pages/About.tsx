@@ -6,6 +6,7 @@ export default function About() {
   return (
     <Layout>
       <section className="w-full h-[400px] px-10 bg-blue-200">
+        
       </section>
       <section className="w-full pt-20 flex items-center flex-col justify-center" style={{ fontFamily: 'quador' }}>
         <h2 className="text-4xl md:text-5xl text-center text-blue-800 font-semibold tracking-wider">Nuestra Historia</h2>
@@ -25,9 +26,9 @@ export default function About() {
           <div className="w-1/2 h-full bg-cover bg-center" style={{ backgroundImage: `url(${Pedro})` }}>
           </div>
         </div>
-        <div className="w-full px-7 mt-10 bg-purplemain">
-          <div className="w-full h-96 flex px-2 md:px-20 items-center justify-center bg-center bg-cover" style={{ fontFamily: 'quador', backgroundImage: `url(${bannerImg2})` }}>
-            <h2 className="text-white text-3xl text-center">El mismo enseña a su hijo Pedro, el cual sigue sus pasos creando, innovando, y trabajando con pasión y dedicación para continuar esa línea de plateros-orfebres</h2>
+        <div className="w-full px-5 mt-10 bg-purplemain">
+          <div className="w-full h-96 flex px-6 md:px-20 items-center justify-center bg-center bg-cover" style={{ fontFamily: 'quador', backgroundImage: `url(${bannerImg2})` }}>
+            <h2 className="text-white text-xl md:text-3xl text-center">El mismo enseña a su hijo Pedro, el cual sigue sus pasos creando, innovando, y trabajando con pasión y dedicación para continuar esa línea de plateros-orfebres</h2>
           </div>
         </div>
       </section>

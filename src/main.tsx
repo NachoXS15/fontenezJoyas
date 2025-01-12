@@ -6,6 +6,9 @@ import Index from './pages/Index.tsx'
 import Products from './pages/Products.tsx'
 import SingleProduct from './pages/SingleProduct.tsx'
 import About from './pages/About.tsx'
+import Login from './pages/admin/Login.tsx'
+import CheckUser from './pages/admin/CheckUser.tsx'
+import Dashboard from './pages/admin/Dashboard.tsx'
 
   const router = createBrowserRouter([
     {
@@ -23,6 +26,19 @@ import About from './pages/About.tsx'
     {
       path: "/about",
       element: <About />
+    },
+    {
+      path: "/admin/",
+      element: <Login />,
+    
+    },
+    {
+      path: "/admin/check",
+      element: <CheckUser />,
+    },
+    {
+      path: "/dashboard",
+      element: <Dashboard />
     }
   ])
 
