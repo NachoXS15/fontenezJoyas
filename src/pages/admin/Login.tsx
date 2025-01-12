@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom"
 
 export default function Login() {
     const [keepSession, setKeepSession] = useState(false)
-    const navigate = useNavigate()
+    const navigate = useNavigate();
 
     const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault();
