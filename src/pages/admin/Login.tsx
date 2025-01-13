@@ -39,7 +39,7 @@ export default function Login() {
                         <h2 className="mb-2 text-center text-blue-800 font-bold text-4xl">Acceso</h2>
                         <hr className="border w-20 border-purplemain" />
                     </div>
-                    <form action="" className="w-full px-14 flex items-center justify-center flex-col" onSubmit={handleSubmit}>
+                    <form action="" className="w-full px-10 flex items-center justify-center flex-col" onSubmit={handleSubmit}>
                         <div className="w-full flex items-start flex-col my-3">
                             <label htmlFor="mail" className="text-xl">Email</label>
                             <input type="email" name="mail" id="mail" className="w-full border-2 h-10 px-2.5 rounded border-blue-600" />
@@ -57,7 +57,7 @@ export default function Login() {
                 </div>
             </section>
             <div className="hidden bg-purplemain lg:flex items-center justify-center h-full">
-                <img src={logo} className="w-80 xl:w-[500px]" alt="" />
+                <img src={logo} className="w-80 xl:w-[400px]" alt="" />
             </div>
         </main>
     )
