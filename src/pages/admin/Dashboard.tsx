@@ -6,6 +6,7 @@ import { onAuthStateChanged } from 'firebase/auth'
 import { auth } from '../../config/api/firebaseConfig'
 import { useNavigate } from 'react-router-dom'
 import Card from '../../components/Card'
+
 export default function Dashboard() {
     const navigate = useNavigate();
     useEffect(() => {
@@ -21,7 +22,7 @@ export default function Dashboard() {
     return (
         <div className="flex items-start flex-col xl:flex-row w-full" style={{ fontFamily: 'quador' }}>
             <header className="bg-purplemain h-fit xl:min-h-screen xl:sticky top-0 w-full xl:w-1/6 py-10 xl:flex justify-between items-center xl:flex-col">
-                <div className='hidden xl:blck'>
+                <div className='hidden xl:block'>
                     <img src={logo} width={250} alt="" />
                     <h2 className='text-center text-white'>Gestión de productos</h2>
                 </div>
