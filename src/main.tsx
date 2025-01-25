@@ -20,7 +20,7 @@ import Dashboard from './pages/admin/Dashboard.tsx'
       element: <Products />
     },
     {
-      path: "/producto",
+      path: "/producto/:id",
       element: <SingleProduct />
     },
     {

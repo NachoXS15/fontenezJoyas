@@ -1,9 +1,11 @@
-import Card from "../components/Card";
 import Categories from "../components/Categories";
 import Layout from "../components/Layout";
 import { Cancel, Check } from "../components/ui/Icons";
+import GetProducts from "../config/api/GetProducts";
+
 
 export default function Products() {
+  
   return (
     <Layout>
         <main className="max-w-full flex justify-center font-serif" style={{fontFamily: 'quador'}}>
@@ -23,18 +25,7 @@ export default function Products() {
                   </form>
                 </div>
                 <hr className="border-2 border-purplemain w-20 m-auto" />
-                <div className="w-full mt-5 grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  md:gap-1">
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
-                </div>
+                <GetProducts />
             </section>
         </main>
     </Layout>

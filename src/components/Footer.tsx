@@ -3,8 +3,8 @@ import logo from '../assets/iso_blanco.png'
 export default function Footer() {
     return (
         <>
-            <footer className='w-full h-fit bg-purplemain flex flex-col justify-center md:items-start px-10 md:px-36 md:pt-10' style={{fontFamily: 'quador'}}>
-                <div className='w-full md:flex flex-row justify-center gap-x-6 items-center'>
+            <footer className='w-full h-fit bg-purplemain flex flex-col justify-center md:items-start px-10 lg:px-32 lg:px-32 md:px-7 md:pt-10' style={{fontFamily: 'quador'}}>
+                <div className='w-full md:flex flex-row justify-center md:gap-x-2 xl:gap-x-6 items-center'>
                     <div className="w-full mt-10 md:hidden flex justify-center md:justify-center">
                         <img src={logo} alt="Logo" className="w-20 md:w-24" />
                     </div>
@@ -12,15 +12,15 @@ export default function Footer() {
                     <div className='w-full md:flex flex-col text-white md:border-r-2 md:border-white'>
                         <h2 className='text-3xl mb-5'>Contacto</h2>
                         <nav className='flex flex-col gap-3 md:gap-4'>
-                            <div className="flex gap-2">
+                            <div className="flex gap-2 items-center">
                                 <Instagram />
                                 <span>@fontenezjoyas_</span>
                             </div>
-                            <div className="flex gap-2">
+                            <div className="flex gap-2 items-center">
                                 <Mail color="white" size={32} />
                                 <span>fontenzjoyas@gmail.com</span>
                             </div>
-                            <div className="flex gap-2">
+                            <div className="flex gap-2 items-center">
                                 <Phone />
                                 <span>+54 9 3804-360110</span>
                             </div>
