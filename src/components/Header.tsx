@@ -13,7 +13,7 @@ export default function Header() {
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         const formData = new FormData(e.currentTarget);
-        const searchField = formData.get("search")?.toString || "";
+        const searchField = formData.get("search")?.toString() || "";
 
         navigate(`/productos/${searchField}`)
     }

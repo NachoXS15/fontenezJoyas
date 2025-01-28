@@ -8,8 +8,8 @@ import { useState } from "react";
 
 export default function Products() {
   const [categorySelected, setCategorySelected] = useState<string>("")
-  const { search } = useParams();
-  console.log(search);
+  const { id } = useParams();
+  console.log(id);
 
   const handleCategory = (c: string) => {
       setCategorySelected(c);
@@ -55,7 +55,7 @@ export default function Products() {
             </form>
           </div>
           <hr className="border-2 border-purplemain w-20 m-auto" />
-          <GetProducts search={search || ""} categoryProp={categorySelected} />
+          <GetProducts search={id || ""} categoryProp={categorySelected} />
         </section>
       </main>
     </Layout>

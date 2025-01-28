@@ -66,10 +66,10 @@ export default function GetProducts({ categoryProp, search }: categoryProp) {
                     ))
                 ) : noProducts ? (
                     <div className="w-full text-center mt-10">
-                        <p className="text-lg text-gray-500">No se encontraron productos para los filtros aplicados.</p>
+                        <p className="text-lg text-gray-500">No se encontraron productos.</p>
                     </div>
                 ) : (
-                    <div className="w-full flex justify-center mt-10">
+                    <div className="w-full flex justify-center items-center h-24 mt-10">
                         <Loader />
                     </div>
                 )
