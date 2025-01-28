@@ -1,8 +1,10 @@
 import { addDoc, collection, getFirestore } from "firebase/firestore";
 import HeaderAdmin from "../../components/HeaderAdmin";
+import { useNavigate } from "react-router";
+import { CategoriesA } from "../../config/Categories";
 
 export default function AddProduct() {
-
+    const navigate = useNavigate();
     const db = getFirestore();
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
@@ -15,7 +17,7 @@ export default function AddProduct() {
         const category = formData.get("category")?.toString()
         
         try {
-            const docRef = await addDoc(collection(db, "paquetes"), {
+            const docRef = await addDoc(collection(db, "productos"), {
                 prodName: prodName,
                 price: price,
                 categoria: category,
@@ -23,6 +25,7 @@ export default function AddProduct() {
                 img: img,
             })
             console.log("creado: ", docRef.id);
+            navigate("/dashboard")
         } catch (error) {
             console.log("error: ", error);
         }
@@ -50,17 +53,24 @@ export default function AddProduct() {
                         </div>
                         <div className="w-full flex items-center gap-2 justify-around">
                             <div className="w-1/2 flex flex-col">
-                                <label htmlFor="" className="text-xl">Category</label>
-                                <input type="text" className="h-9 mt-1 rounded border border-blue-800 px-2 py-1" name="category" />
+                                <label htmlFor="" className="text-xl">Categoria</label>
+                                <select className="h-9 mt-1 rounded border border-blue-800 px-2 py-1" name="category">
+                                    <option value="" defaultChecked disabled>Seleccionar</option>
+                                    {
+                                        CategoriesA.map(cat => (
+                                            <option value={cat}>{cat}</option>
+                                        ))
+                                    }
+                                </select>
                             </div>
                             <div className="w-1/2 flex flex-col">
-                                <label htmlFor="" className="text-xl">Descripcion</label>
+                                <label htmlFor="" className="text-xl">Imagen</label>
                                 <input type="text" className="h-9 mt-1 rounded border border-blue-800 px-2 py-1" name="img" />
                             </div>
                         </div>
                         <div className="w-full flex items-center gap-8">
                             <div className="w-full flex flex-col">
-                                <label htmlFor="" className="text-xl">Producto</label>
+                                <label htmlFor="" className="text-xl">Descripción</label>
                                 <textarea className="h-20 mt-1 resize-none rounded border border-blue-800 px-2 py-1" name="desc" />
                             </div>
                         </div>
