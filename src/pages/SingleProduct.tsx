@@ -48,7 +48,7 @@ export default function SingleProduct() {
         <div className="w-10/12 md:w-1/2 flex flex-col gap-5">
           <h2 className="text-5xl font-bold text-blue-800">{product?.prodName}</h2>
           <CategoryTag categoria={product?.categoria} />
-          <p className="text-md">{product?.desc}</p>
+          <p className="text-xl">{product?.desc}</p>
           <p className="text-4xl mb-5 text-purplemain font-medium">${product?.precio}</p>
           <div className="">
             <NavLink to="/" className="bg-blue-800 mr-2 mt-5 md:mt-10 rounded-full border w-fit px-5 py-2 text-white text-xl transition hover:bg-white hover:border-blue-800 hover:text-blue-800">Comprar</NavLink>

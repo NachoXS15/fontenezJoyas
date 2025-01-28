@@ -19,7 +19,7 @@ export default function AddProduct() {
         try {
             const docRef = await addDoc(collection(db, "productos"), {
                 prodName: prodName,
-                price: price,
+                price: Number(price),
                 categoria: category,
                 desc: desc,
                 img: img,
@@ -44,17 +44,17 @@ export default function AddProduct() {
                         <div className="w-full flex items-center gap-2 justify-around">
                             <div className="w-1/2 flex flex-col">
                                 <label htmlFor="" className="text-xl">Producto</label>
-                                <input type="text" className="h-9 mt-1 rounded border border-blue-800 px-2 py-1" name="nombre" />
+                                <input type="text" className="h-9 bg-gray-100  mt-1 rounded border border-blue-800 px-2 py-1" name="nombre" />
                             </div>
                             <div className="w-1/2 flex flex-col">
                                 <label htmlFor="" className="text-xl">Precio</label>
-                                <input type="number" className="h-9 mt-1 rounded border border-blue-800 px-2 py-1" name="price" />
+                                <input type="number" className="h-9 bg-gray-100  mt-1 rounded border border-blue-800 px-2 py-1" name="price" />
                             </div>
                         </div>
                         <div className="w-full flex items-center gap-2 justify-around">
                             <div className="w-1/2 flex flex-col">
                                 <label htmlFor="" className="text-xl">Categoria</label>
-                                <select className="h-9 mt-1 rounded border border-blue-800 px-2 py-1" name="category">
+                                <select className="h-9 bg-gray-100  mt-1 rounded border border-blue-800 px-2 py-1" name="category">
                                     <option value="" defaultChecked disabled>Seleccionar</option>
                                     {
                                         CategoriesA.map(cat => (
@@ -65,13 +65,13 @@ export default function AddProduct() {
                             </div>
                             <div className="w-1/2 flex flex-col">
                                 <label htmlFor="" className="text-xl">Imagen</label>
-                                <input type="text" className="h-9 mt-1 rounded border border-blue-800 px-2 py-1" name="img" />
+                                <input type="text" className="h-9 bg-gray-100  mt-1 rounded border border-blue-800 px-2 py-1" name="img" />
                             </div>
                         </div>
                         <div className="w-full flex items-center gap-8">
                             <div className="w-full flex flex-col">
                                 <label htmlFor="" className="text-xl">Descripción</label>
-                                <textarea className="h-20 mt-1 resize-none rounded border border-blue-800 px-2 py-1" name="desc" />
+                                <textarea className="h-20 mt-1 bg-gray-100  resize-none rounded border border-blue-800 px-2 py-1" name="desc" />
                             </div>
                         </div>
                         <button type="submit" className="w-full mt-2 bg-blue-800 text-xl text-white py-2 rounded">Cargar</button>
