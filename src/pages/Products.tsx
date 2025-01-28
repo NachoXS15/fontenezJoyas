@@ -8,11 +8,12 @@ import { useState } from "react";
 
 export default function Products() {
   const [categorySelected, setCategorySelected] = useState<string>("")
-  const { id } = useParams();
+  let { id } = useParams();
   console.log(id);
 
   const handleCategory = (c: string) => {
       setCategorySelected(c);
+      id = "";
   }
 
   return (
@@ -40,7 +41,7 @@ export default function Products() {
             </div>
           </div>
         </aside>
-        <section className="w-full xl:w-9/12 flex items-start flex-col justify-center m-auto bg-slate-50 px-2 md:px-10 py-12">
+        <section className="w-full  xl:w-9/12 flex items-start flex-col justify-center m-auto bg-slate-50 px-2 md:px-10 py-12">
           <div className="w-full flex items-center justify-between mb-10">
             <h2 className="text-center pl-2 text-3xl font-bold text-blue-800">Nuestros Productos</h2>
             <form className="flex items-center text-xl gap-2 text-purplemain">

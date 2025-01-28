@@ -8,6 +8,6 @@ export interface ProductProps {
 }
 
 export interface categoryProp{
-    categoryProp: string | undefined
-    search: string | undefined
+    categoryProp?: string | undefined
+    search?: string | undefined
 }
