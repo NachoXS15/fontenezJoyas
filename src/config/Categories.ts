@@ -1,16 +1,8 @@
-const CategoriesJoyas = [
+export const CategoriesA = [
     "Anillos",
     "Aros",
     "Pulseras",
-    "Collares"
-]
-
-const CategoriesArt = [
+    "Collares",
     "Cubiertos",
     "Mates"
 ]
-
-export {
-    CategoriesArt,
-    CategoriesJoyas
-}

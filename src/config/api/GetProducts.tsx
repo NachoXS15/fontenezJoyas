@@ -1,12 +1,22 @@
 import { app } from "../api/firebaseConfig";
 import { getFirestore, getDocs, collection } from "firebase/firestore";
-import { ProductProps } from "../definitions";
+import { categoryProp, ProductProps } from "../definitions";
 import { useEffect, useState } from "react";
 import Card from "../../components/Card";
+import Loader from "../../components/ui/Loader";
 
-export default function GetProducts() {
+export default function GetProducts({ categoryProp, search }: categoryProp) {
 
-    const [products, setProducts] = useState<ProductProps[]>([])
+    const [products, setProducts] = useState<ProductProps[]>([]);
+    const filteredCategory = products.filter(product => {
+        if (search) {
+            return product.prodName.toLowerCase().includes(search.toLowerCase());
+        }
+        if (categoryProp && categoryProp !== "Todas") {
+            return product.categoria === categoryProp;
+        }
+        return true;
+    });
     const [noProducts, setNoProducts] = useState(false)
     const db = getFirestore(app)
 
@@ -17,13 +27,12 @@ export default function GetProducts() {
                 id: doc.id,
                 ...doc.data()
             })) as unknown as ProductProps[];
-            setProducts(dataList);            
+            setProducts(dataList);
         } catch (error) {
             console.error("Error: ", error);
 
         }
     }
-
     useEffect(() => {
         fetchData();
         const timer = setTimeout(() => {
@@ -42,12 +51,30 @@ export default function GetProducts() {
     }, [products]);
 
     return (
-        <div className="w-full mt-5 grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  md:gap-1">
+        <div className="w-full h-fit mt-5 grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  md:gap-1">
             {
-                products.map(product => (
-                    <Card id={product.id} desc={product.desc} prodName={product.prodName} img={product.img} precio={product.precio} />
-                ))
+                filteredCategory.length > 0 ? (
+                    filteredCategory.map(product => (
+                        <Card
+                            key={product.id}
+                            id={product.id}
+                            desc={product.desc}
+                            prodName={product.prodName}
+                            img={product.img}
+                            precio={product.precio}
+                        />
+                    ))
+                ) : noProducts ? (
+                    <div className="w-full text-center mt-10">
+                        <p className="text-lg text-gray-500">No se encontraron productos para los filtros aplicados.</p>
+                    </div>
+                ) : (
+                    <div className="w-full flex justify-center mt-10">
+                        <Loader />
+                    </div>
+                )
             }
+
         </div>
     )
 }

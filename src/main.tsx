@@ -20,6 +20,10 @@ import Dashboard from './pages/admin/Dashboard.tsx'
       element: <Products />
     },
     {
+      path: "/productos/:id",
+      element: <Products />
+    },
+    {
       path: "/producto/:id",
       element: <SingleProduct />
     },
