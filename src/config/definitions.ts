@@ -10,4 +10,5 @@ export interface ProductProps {
 export interface categoryProp{
     categoryProp?: string | undefined
     search?: string | undefined
+    id?: string | undefined
 }

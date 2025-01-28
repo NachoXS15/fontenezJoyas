@@ -12,7 +12,7 @@ export default function Card({img, precio, prodName, desc, id}: ProductProps) {
                 <div className='mt-2 flex justify-between'>
                     <NavLink to={`/producto/${id}`} className="rounded-full text-white bg-blue-800 px-5 mt-2 py-1 w-fit">Ver Más</NavLink>
                     <div className={`${window.location.pathname == "/dashboard" ? "flex gap-2" : "hidden"}`}>
-                        <button><Edit /></button>
+                        <a href={`/dashboard/editProduct/${id}`}><Edit /></a>
                         <button><Trash /></button>
                     </div>
                 </div>
