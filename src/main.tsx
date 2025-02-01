@@ -26,7 +26,7 @@ import * as Pages from './pages/Wrap'
       element: <Pages.About />
     },
     {
-      path: "/admin/",
+      path: "/admin",
       element: <Pages.Login />,
     
     },
