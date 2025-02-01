@@ -8,19 +8,15 @@ import Pedro from '../assets/banners/banner6.jpg'
 export default function About() {
     return (
         <Layout>
-            <section className="w-full h-[450px] flex gap-5 py-5 px-10">
-                <div className="w-2/5 flex flex-col gap-2">
-                    <div className="h-1/2 w-full flex gap-2">
-                        <div className="w-1/2 bg-center bg-cover" style={{backgroundImage: `url(${bannerImg})`}}></div>
-                        <div className="w-1/2 bg-center bg-cover" style={{backgroundImage: `url(${bannerImg3})`}}></div>
+            <section className="w-full h-[450px] flex flex-col gap-5 py-5 px-3 md:px-10">
+                <div className="w-full md:w-2/5 h-full flex flex-row md:flex-col gap-2">
+                    <div className="h-full md:h-1/2 w-full flex gap-2">
+                        <div className="w-1/2 h-full bg-center bg-cover" style={{ backgroundImage: `url(${bannerImg})` }}></div>
+                        <div className="w-1/2 h-full bg-center bg-cover" style={{ backgroundImage: `url(${bannerImg3})` }}></div>
                     </div>
-                    <div className="h-1/2 w-full bg-center bg-cover" style={{backgroundImage: `url(${bannerImg2})`}}>
-
-                    </div>
+                    <div className="md:h-1/2 h-full w-full bg-center bg-cover" style={{ backgroundImage: `url(${bannerImg2})` }}></div>
                 </div>
-                <div className="w-3/5 bg-center bg-cover" style={{backgroundImage: `url(${bannerImg2})`}}>
-
-                </div>
+                <div className="w-full h-full md:w-3/5 bg-center bg-cover" style={{ backgroundImage: `url(${bannerImg2})` }}></div>
             </section>
             <section className="w-full pt-20 flex items-center flex-col justify-center" style={{ fontFamily: 'quador' }}>
                 <h2 className="text-4xl md:text-5xl text-center text-blue-800 font-semibold tracking-wider">Nuestra Historia</h2>
