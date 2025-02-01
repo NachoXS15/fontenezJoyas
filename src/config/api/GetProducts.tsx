@@ -50,6 +50,8 @@ export default function GetProducts({ categoryProp, search }: categoryProp) {
         }
     }, [products]);
 
+
+    
     return (
         <div className="w-full min-h-96 mt-5 grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  md:gap-1">
             {

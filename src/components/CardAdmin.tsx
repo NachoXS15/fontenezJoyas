@@ -25,7 +25,7 @@ export default function Card({ img, precio, prodName, id }: ProductProps) {
             <div className="w-full flex flex-col">
                 <h2 className="text-xl lg:text-2xl font-bold mt text-blue-800">{prodName}</h2>
                 <h3 className="text-xl text-gray-400">${precio}</h3>
-                <div className='w-full mt-2 flex items-center justify-between'>
+                <div className='w-full mt-2 flex flex-col gap-4 md:flex-row items-center justify-between'>
                     <NavLink to={`/producto/${id}`} className="rounded-full text-md text-white bg-blue-800 px-4 mt-2 py-1 w-fit">Ver Producto</NavLink>
                     <div className={`${window.location.pathname == "/dashboard" ? "flex gap-2 items-center" : "hidden"}`}>
                         <a href={`/dashboard/editProduct/${id}`} className='hover:scale-105 transition'><Edit /></a>
