@@ -35,7 +35,7 @@ import * as Pages from './pages/Wrap'
       element: <Pages.CheckUser />,
     },
     {
-      path: "/dashboard/",
+      path: "/dashboard",
       element: <Pages.Dashboard />,
     },
     {
