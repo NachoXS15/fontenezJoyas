@@ -145,7 +145,7 @@ export default function EditProduct() {
                                 />
                             </div>
                         </div>
-                        <button type="submit" className="w-full mt-2 bg-blue-800 text-xl text-white py-2 rounded">Cargar</button>
+                        <button type="submit" className="w-full mt-2 bg-blue-800 text-xl text-white py-2 rounded">Actualizar</button>
                     </form>
                 </div>
             </main>

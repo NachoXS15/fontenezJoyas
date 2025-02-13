@@ -1,5 +1,5 @@
 import Layout from "../components/Layout";
-import { NavLink, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 // import Card from "../components/Card";
 import { useEffect, useState } from "react";
 import { ProductProps } from "../config/definitions";
@@ -28,6 +28,15 @@ export default function SingleProduct() {
     }
   }
 
+  const buyItem = () => {
+    const pickedProduct = product?.prodName
+
+    const message = `¡Hola!, estoy interesado/a en comprar ${pickedProduct}.`;
+
+    const phoneNumber = "549380436011";
+    window.open(`https://wa.me/${phoneNumber}?text=${message}`);
+  }
+
   useEffect(() => {
     if (id) {
       fetchData(id);
@@ -51,8 +60,8 @@ export default function SingleProduct() {
           <p className="text-xl">{product?.desc}</p>
           <p className="text-4xl mb-5 text-purplemain font-medium">${product?.precio}</p>
           <div className="">
-            <NavLink to="/" className="bg-blue-800 mr-2 mt-5 md:mt-10 rounded-full border w-fit px-5 py-2 text-white text-xl transition hover:bg-white hover:border-blue-800 hover:text-blue-800">Comprar</NavLink>
-            <NavLink to="/" className="border border-blue-800 mt-5 md:mt-10 rounded-full w-fit px-5 py-2 text-blue-800 text-xl hover:bg-blue-800 hover:text-white transition">Añadir al carrito</NavLink>
+            <button onClick={buyItem} className="bg-blue-800 mr-2 mt-5 md:mt-10 rounded-full border w-fit px-5 py-2 text-white text-xl transition hover:bg-white hover:border-blue-800 hover:text-blue-800">Comprar</button>
+            {/* <button className="border border-blue-800 mt-5 md:mt-10 rounded-full w-fit px-5 py-2 text-blue-800 text-xl hover:bg-blue-800 hover:text-white transition">Añadir al carrito</button> */}
           </div>
         </div>
       </div>
