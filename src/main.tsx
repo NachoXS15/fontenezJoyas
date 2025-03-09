@@ -14,6 +14,10 @@ import * as Pages from './pages/Wrap'
       element: <Pages.Products />
     },
     {
+      path: "/servicios",
+      element: <Pages.Services />
+    },
+    {
       path: "/productos/:id",
       element: <Pages.Products />
     },

@@ -25,6 +25,7 @@ export default function Header() {
                     <img src={logo} className="w-14 md:w-10 hover:scale-105 transition" alt="" />
                 </NavLink>
                 <nav className='hidden md:flex justify-center items-center gap-10'>
+                    <NavLink className="mx-5 text-lg text-bluemain md:hover:scale-105 transition" style={{ fontFamily: 'Mundial' }} to="/servicios">Servicios</NavLink>
                     <NavLink className="mx-5 text-lg text-bluemain md:hover:scale-105 transition" style={{ fontFamily: 'Mundial' }} to="/productos">Productos</NavLink>
                     <NavLink className="mx-5 text-lg text-bluemain md:hover:scale-105 transition" style={{ fontFamily: 'Mundial' }} to="/about">Nosotros</NavLink>
                     <form action="" onSubmit={handleSubmit} className="flex items-center gap-2">
@@ -40,6 +41,7 @@ export default function Header() {
                 <div className='md:hidden bg-slate-200 h-fit py-9 bottom-0'>
                     <hr className='w-4/5 m-auto border border-purplemain' />
                     <div className='flex flex-col mt-3 px-10' style={{fontFamily: 'quador'}}>
+                        <NavLink className="mx-5 text-lg text-bluemain md:hover:scale-105 transition" style={{ fontFamily: 'Mundial' }} to="/servicios">Servicios</NavLink>
                         <NavLink className="hover:scale-105 transition my-2 mx-2 text-xl text-purplemain" to="/productos">Productos</NavLink>
                         <NavLink className="hover:scale-105 transition my-2 mx-2 text-xl text-purplemain" to="/about">Nosotros</NavLink>
                         <form action="" onSubmit={handleSubmit} className="w-full mt-2 flex items-center gap-2">

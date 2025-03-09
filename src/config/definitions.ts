@@ -12,3 +12,8 @@ export interface categoryProp{
     search?: string | undefined
     id?: string | undefined
 }
+
+export interface serviceProps{
+    title: string,
+    desc: string
+}

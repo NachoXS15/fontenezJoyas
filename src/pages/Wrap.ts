@@ -7,6 +7,7 @@ import Dashboard from "./admin/Dashboard"
 import AddProduct from "./admin/AddProduct"
 import EditProduct from "./admin/EditProduct"
 import CheckUser from "./admin/CheckUser";
+import Services from "./Services"
 
 
-export {Index, About, Products, SingleProduct, AddProduct, Login, EditProduct, CheckUser, Dashboard}
+export {Index, About, Products, SingleProduct, AddProduct, Login, EditProduct, CheckUser, Dashboard, Services}
