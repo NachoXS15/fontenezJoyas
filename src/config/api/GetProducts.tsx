@@ -30,7 +30,6 @@ export default function GetProducts({ categoryProp, search }: categoryProp) {
             setProducts(dataList);
         } catch (error) {
             console.error("Error: ", error);
-
         }
     }
     useEffect(() => {
