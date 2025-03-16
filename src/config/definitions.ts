@@ -17,3 +17,9 @@ export interface serviceProps{
     title: string,
     desc: string
 }
+
+export interface selectedService{
+    title: string
+    desc: string
+    display: string
+}
