@@ -17,8 +17,8 @@ export default function Products() {
 
   return (
     <Layout>
-      <main className="max-w-full flex justify-center font-serif" style={{ fontFamily: 'quador' }}>
-        <aside className="hidden xl:block xl:w-fit lg:px-10 bg-slate-200 px-10 py-14" style={{ fontFamily: 'quador' }}>
+      <main className="max-w-full flex justify-center font-serif" style={{fontFamily: 'garamond-premier-pro'}}>
+        <aside className="hidden xl:block xl:w-fit lg:px-10 bg-slate-200 px-10 py-14" style={{fontFamily: 'garamond-premier-pro'}}>
           <div className="flex gap-2 flex-col items-start">
             <h2 className="text-3xl text-blue-800 font-bold uppercase">Joyas</h2>
             <div className="flex flex-col items-start">
