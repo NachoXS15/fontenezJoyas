@@ -50,7 +50,7 @@ export default function SingleProduct() {
 
   return (
     <Layout>
-      <div className="w-full lg:w-5/6 my-10 lg:px-24 md:my-14 h-fit m-auto flex flex-col md:flex-row items-center justify-center gap-10 tracking-wider" style={{fontFamily: 'garamond-premier-pro'}}>
+      <div className="w-full lg:w-5/6 my-10 lg:px-24 md:my-14 h-fit m-auto flex flex-col md:flex-row items-center justify-center gap-10 tracking-wider" style={{fontFamily: 'jubilat'}}>
         <div className="w-10/12 md:w-2/6 h-96 bg-cover bg-center bg-slate-700 rounded" style={{ backgroundImage: `url(/assets/products/${product?.img})` }}>
 
         </div>
@@ -66,7 +66,7 @@ export default function SingleProduct() {
         </div>
       </div>
       <hr className="border-2 m-auto border-purplemain w-32" />
-      <div className="w-full lg:w-4/6 m-auto my-5 px-1 tracking-wider" style={{fontFamily: 'garamond-premier-pro'}}>
+      <div className="w-full lg:w-4/6 m-auto my-5 px-1 tracking-wider" style={{fontFamily: 'jubilat'}}>
         <h2 className="text-center text-purplemain font-semibold text-3xl mb-2">Productos relacionados</h2>
         <div className="w-full grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-2 md:gap-1">
           {/* <Card />
