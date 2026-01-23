@@ -17,10 +17,10 @@ export default function Products() {
 
   return (
     <Layout>
-      <main className="max-w-full flex justify-center font-serif" style={{ fontFamily: 'quador' }}>
-        <aside className="hidden xl:block xl:w-fit lg:px-10 bg-slate-200 px-10 py-14" style={{ fontFamily: 'quador' }}>
+      <main className="max-w-full flex justify-center" style={{fontFamily: 'jubilat'}}>
+        <aside className="hidden xl:block xl:w-fit lg:px-10 bg-slate-200 px-10 py-14" style={{fontFamily: 'jubilat'}}>
           <div className="flex gap-2 flex-col items-start">
-            <h2 className="text-3xl text-blue-800 font-bold uppercase">Joyas</h2>
+            <h2 className="text-3xl text-blue-800 font-semibold uppercase">Joyas</h2>
             <div className="flex flex-col items-start">
               {
                 CategoriesA.slice(0, 4).map((cat, i) => (
@@ -30,7 +30,7 @@ export default function Products() {
             </div>
           </div>
           <div className="flex gap-2 flex-col items-start mt-10">
-            <h2 className="text-3xl text-blue-800 font-bold uppercase">Artesanias</h2>
+            <h2 className="text-3xl text-blue-800 font-semibold uppercase">Artesanias</h2>
             <div className="flex flex-col items-start">
               {
                 CategoriesA.slice(4).map((cat, i) => (
@@ -42,7 +42,7 @@ export default function Products() {
         </aside>
         <section className="w-full  xl:w-9/12 flex items-start flex-col justify-center m-auto bg-slate-50 px-2 md:px-10 py-12">
           <div className="w-full flex items-center justify-between mb-10">
-            <h2 className="text-center pl-2 text-3xl font-bold text-blue-800">Nuestros Productos</h2>
+            <h2 className="text-center pl-2 text-3xl font-semibold text-blue-800">Nuestros Productos</h2>
             {/* <form className="flex items-center text-xl gap-2 text-purplemain">
               <select name="" id="" className="w-28 border-2 border-purplemain rounded-full px-2 py-1 pr-2">
                 <option value="" className="">Filtros</option>
