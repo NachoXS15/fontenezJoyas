@@ -1,4 +1,7 @@
 @import url("https://use.typekit.net/yvl7stx.css");
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+  --color-purplemain: #0f0e45;
+  --color-darkblue: #244e73;
+}

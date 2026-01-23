@@ -16,8 +16,8 @@ export default function Services() {
 
     return (
         <Layout>
-            <section className="w-full h-[650px] bg-cover bg-center" style={{ backgroundImage: `url(${Anillo})` }}>
-                <div className="bg-purplemain w-full h-[650px] bg-cover bg-opacity-40 flex items-center justify-center ">
+            <section className="w-full h-162.5 bg-cover bg-center" style={{ backgroundImage: `url(${Anillo})` }}>
+                <div className="bg-purplemain/40 w-full h-162.5 bg-cover flex items-center justify-center ">
                 <img src={logo} width={300} alt="" />
                 </div>
             </section>
@@ -38,7 +38,7 @@ export default function Services() {
                     </div>
                 </div>
             </main>
-            <section className="w-full h-[600px] px-5 md:px-10 mt-10 flex gap-10 items-center justify-center">
+            <section className="w-full h-150 px-5 md:px-10 mt-10 flex gap-10 items-center justify-center">
                 <div className="hidden md:block w-full h-4/5 md:w-1/2 bg-slate-200">
                     <img src={banner} className="w-full" alt="" />
                 </div>
