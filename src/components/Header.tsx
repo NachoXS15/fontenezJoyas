@@ -29,7 +29,7 @@ export default function Header() {
                     <NavLink className="mx-5 text-lg text-bluemain md:hover:scale-105 transition" style={{ fontFamily: 'Mundial' }} to="/productos">Productos</NavLink>
                     <NavLink className="mx-5 text-lg text-bluemain md:hover:scale-105 transition" style={{ fontFamily: 'Mundial' }} to="/about">Nosotros</NavLink>
                     <form action="" onSubmit={handleSubmit} className="flex items-center gap-2">
-                        <input type="text" name="search" className="h-7 rounded-full pb-1 px-5 text-gray-700 active:outline-none" placeholder="Buscar..." />
+                        <input type="text" name="search" className="h-7 rounded-full border border-white pb-1 px-5 text-white placeholder:text-white/60 active:outline-none" placeholder="Buscar..." />
                         <button type="submit"><Search color="white" size={24}/></button>
                     </form>
                 </nav>
