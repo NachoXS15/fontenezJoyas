@@ -39,7 +39,7 @@ export default function Footer() {
                 <div className='w-full text-center bg-bluesec mt-10'>
                     <hr className='w-4/5 m-auto border bg-white text-white text-center' />
                     <div className='w-4/5 m-auto'>
-                        <p className='text-white text-center text-md py-4 font-medium'>Copyright © 2024 <strong>Fonteñez Joyas</strong> | Todos los derechos reservados</p>
+                        <p className='text-white text-center text-md py-4 font-medium'>Copyright © 2026 <strong>Fonteñez Joyas</strong> | Todos los derechos reservados</p>
                     </div>
                 </div>
             </footer>

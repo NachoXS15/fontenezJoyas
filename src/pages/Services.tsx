@@ -16,9 +16,9 @@ export default function Services() {
 
     return (
         <Layout>
-            <section className="w-full h-[650px] bg-cover bg-center" style={{ backgroundImage: `url(${Anillo})` }}>
-                <div className="bg-purplemain w-full h-[650px] bg-cover bg-opacity-40 flex items-center justify-center ">
-                    <img src={logo} width={300} alt="" />
+            <section className="w-full h-162.5 bg-cover bg-center" style={{ backgroundImage: `url(${Anillo})` }}>
+                <div className="bg-purplemain/40 w-full h-162.5 bg-cover flex items-center justify-center ">
+                <img src={logo} width={300} alt="" />
                 </div>
             </section>
             <main className="w-full h-96 mt-20 px-5 md:px-10">
@@ -38,8 +38,9 @@ export default function Services() {
                     </div>
                 </div>
             </main>
-            <section className="w-full h-fit my-20 md:m-0 md:h-[600px] px-5 md:px-10 flex gap-10 items-center justify-center" style={{fontFamily: 'jubilat'}}>
-                <div className="hidden md:block w-full h-4/5 md:w-1/2 bg-slate-200 bg-cover bg-center" style={{ backgroundImage: `url(${banner})` }}>
+            <section className="w-full h-150 px-5 md:px-10 mt-10 flex gap-10 items-center justify-center">
+                <div className="hidden md:block w-full h-4/5 md:w-1/2 bg-slate-200">
+                    <img src={banner} className="w-full" alt="" />
                 </div>
                 <div className="w-full min-h-fit md:h-4/5 md:w-1/2 flex flex-col items-center md:items-end md:justify-center">
                     <h2 className="text-5xl text-white bg-purplemain text-center w-full md:w-fit px-14 py-2">{selectedService.title}</h2>
